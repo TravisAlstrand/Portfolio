@@ -1,4 +1,9 @@
 const AboutMe = () => {
+  const handleToggle = (e) => {
+    // Update aria-expanded based on the open property of the details element
+    e.target.setAttribute("aria-expanded", e.target.open);
+  };
+
   return (
     <section
       id="about"
@@ -38,6 +43,7 @@ const AboutMe = () => {
               aria-expanded="false"
               role="group"
               aria-label="Expandable skills section"
+              onToggle={handleToggle}
             >
               <summary
                 className="flex cursor-pointer items-center justify-between"
