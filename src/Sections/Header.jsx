@@ -46,7 +46,7 @@ const Header = () => {
         <div className="flex items-center">
           {/* Mobile Nav Button */}
           <button
-            className="rounded-lg p-2 text-gray-700 hover:bg-gray-100 lg:hidden"
+            className="rounded-lg p-2 text-gray-700 hover:cursor-pointer hover:bg-gray-100 lg:hidden"
             aria-label={
               menuOpen ? "Close navigation menu" : "Open navigation menu"
             }

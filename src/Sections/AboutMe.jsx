@@ -33,25 +33,119 @@ const AboutMe = () => {
               Field] combines [Your Unique Qualities or Methodologies].
             </p>
 
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h3 className="mb-4 text-xl font-semibold text-gray-900">
-                What I Bring to the Table:
-              </h3>
-              <ul className="list-inside list-disc space-y-2 text-gray-700">
-                <li>Strong expertise in [Skill/Technology 1]</li>
-                <li>Experience with [Skill/Technology 2]</li>
-                <li>Background in [Relevant Background]</li>
-                <li>Passionate about [Interest/Specialty]</li>
-              </ul>
-            </div>
+            <details
+              className="group rounded-lg bg-white p-6 shadow-sm"
+              aria-expanded="false"
+              role="group"
+              aria-label="Expandable skills section"
+            >
+              <summary
+                className="flex cursor-pointer items-center justify-between"
+                role="button"
+                aria-controls="skills-content"
+                aria-label="Show my technical skills and expertise"
+              >
+                <h3 className="text-xl font-semibold text-gray-900">
+                  What I Bring to the Table
+                </h3>
+                <span
+                  className="ml-4 shrink-0 text-gray-700 transition-transform duration-200 group-open:rotate-180"
+                  aria-hidden="true"
+                >
+                  ▼
+                </span>
+              </summary>
 
-            <div className="rounded-lg bg-white p-6 shadow-sm">
-              <p className="text-lg leading-relaxed text-gray-700">
-                When I&apos;m not [Your Professional Activity], you can find me
-                [Your Hobbies/Interests]. I believe in [Your Personal Philosophy
-                or Professional Motto].
-              </p>
-            </div>
+              <div
+                id="skills-content"
+                className="mt-6 grid gap-6 sm:grid-cols-2"
+                role="region"
+                aria-labelledby="skills-heading"
+              >
+                <div>
+                  <h4
+                    id="languages-heading"
+                    className="mb-3 font-medium text-gray-900"
+                  >
+                    Languages
+                  </h4>
+                  <ul
+                    className="list-inside list-disc space-y-2 text-gray-700"
+                    aria-labelledby="languages-heading"
+                  >
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>C# (Unity)</li>
+                    <li>Java</li>
+                    <li>CSS3</li>
+                    <li>HTML5</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4
+                    id="frameworks-heading"
+                    className="mb-3 font-medium text-gray-900"
+                  >
+                    Frameworks & Libraries
+                  </h4>
+                  <ul
+                    className="list-inside list-disc space-y-2 text-gray-700"
+                    aria-labelledby="frameworks-heading"
+                  >
+                    <li>React</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>Sequelize</li>
+                    <li>TailwindCSS</li>
+                    <li>Flask</li>
+                    <li>SQLAlchemy</li>
+                    <li>SASS</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4
+                    id="tools-heading"
+                    className="mb-3 font-medium text-gray-900"
+                  >
+                    Tools & Platforms
+                  </h4>
+                  <ul
+                    className="list-inside list-disc space-y-2 text-gray-700"
+                    aria-labelledby="tools-heading"
+                  >
+                    <li>Git & GitHub</li>
+                    <li>Cursor / VS Code</li>
+                    <li>IntelliJ</li>
+                    <li>Postman</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4
+                    id="other-heading"
+                    className="mb-3 font-medium text-gray-900"
+                  >
+                    Other Skills
+                  </h4>
+                  <ul
+                    className="list-inside list-disc space-y-2 text-gray-700"
+                    aria-labelledby="other-heading"
+                  >
+                    <li>Responsive Design</li>
+                    <li>RESTful APIs</li>
+                    <li>Team Player</li>
+                    <li>Fast Learner</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            <p className="text-lg leading-relaxed text-gray-700">
+              When I&apos;m not helping others, you can find me creating 2D
+              games in Unity.
+            </p>
           </div>
         </div>
       </div>
