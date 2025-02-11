@@ -6,9 +6,26 @@ const Header = () => {
   const firstLinkRef = useRef(null);
 
   useEffect(() => {
-    if (menuOpen && firstLinkRef.current) {
-      firstLinkRef.current.focus();
+    const handleKeyDown = (event) => {
+      // Close navigation menu with Escape Key
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener("keydown", handleKeyDown);
+
+      // Move focus to the first link when navigation menu opens
+      if (firstLinkRef.current) {
+        firstLinkRef.current.focus();
+      }
     }
+
+    return () => {
+      // Remove Escape key listener
+      document.removeEventListener("keydown", handleKeyDown);
+    };
   }, [menuOpen]);
 
   return (
