@@ -105,7 +105,7 @@ const Contact = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="rounded-lg bg-gray-900 px-8 py-3 text-lg font-medium text-white transition-colors hover:bg-gray-800"
+                className="rounded-lg bg-gray-900 px-8 py-3 text-lg font-medium text-white transition-colors hover:cursor-pointer hover:bg-gray-800"
                 aria-label="Send message"
               >
                 Send Message
@@ -119,14 +119,14 @@ const Contact = () => {
             </p>
             <div className="mt-4 space-x-4">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:alstrand.travis@gmail.com"
                 className="inline-block rounded-lg border-2 border-gray-900 px-6 py-2 text-gray-900 transition-colors hover:bg-gray-50"
                 aria-label="Send me an email"
               >
                 Email Me
               </a>
               <a
-                href="https://linkedin.com/in/your-profile"
+                href="https://linkedin.com/in/travis-alstrand"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block rounded-lg border-2 border-gray-900 px-6 py-2 text-gray-900 transition-colors hover:bg-gray-50"

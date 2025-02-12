@@ -5,12 +5,12 @@ import Contact from "../Sections/Contact";
 
 const HomePage = () => {
   return (
-    <>
+    <main>
       <Hero />
       <AboutMe />
       <Projects />
       <Contact />
-    </>
+    </main>
   );
 };
 
