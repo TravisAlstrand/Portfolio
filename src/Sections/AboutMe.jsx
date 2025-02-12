@@ -28,8 +28,6 @@ const AboutMe = () => {
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-gray-700">
               Hi! I&apos;m Travis, a Web Developer based in Northern California.
-              I specialize in JavaScript but have a good grasp on numerous
-              programming languages.
             </p>
 
             <p className="text-lg leading-relaxed text-gray-700">
