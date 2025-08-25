@@ -31,9 +31,14 @@ const AboutMe = () => {
             </p>
 
             <p className="text-lg leading-relaxed text-gray-700">
-              With [X] years of experience in the field, I&apos;m passionate
-              about [What You&apos;re Passionate About]. My approach to [Your
-              Field] combines [Your Unique Qualities or Methodologies].
+              For the past few years, I&apos;ve guided hundreds of students
+              through their first steps in web development as part of my role at
+              Team Treehouse.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-700">
+              Now, I&apos;m taking that same journey further myself. I&apos;m
+              ready to bring my skills, teaching experience, and passion for
+              problem-solving into a developer role.
             </p>
 
             <details

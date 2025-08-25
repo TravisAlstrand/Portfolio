@@ -10,7 +10,6 @@ const Projects = () => {
         liveLink: "https://project-url.com",
         githubLink: "https://github.com/username/project",
       },
-      // Add more JavaScript projects here
     ],
     python: [
       {
@@ -22,19 +21,16 @@ const Projects = () => {
         liveLink: "https://project-url.com",
         githubLink: "https://github.com/username/project",
       },
-      // Add more Python projects here
     ],
     unity: [
       {
-        title: "Project Name",
-        description:
-          "Brief description of the project highlighting key features and technologies used.",
-        image: "/path-to-project-image.jpg",
+        title: "Robot Runner",
+        description: "2D Endless Runner submitted as a Game Jam Entry.",
+        image: "./robotRunner.png",
         technologies: ["Unity", "C#", "2D Game Development"],
-        liveLink: "https://project-url.com",
-        githubLink: "https://github.com/username/project",
+        liveLink: "https://trappenstein-games.itch.io/robot-runner",
+        githubLink: "",
       },
-      // Add more Unity projects here
     ],
   };
 
@@ -102,14 +98,18 @@ const Projects = () => {
                         >
                           View Live
                         </a>
-                        <a
-                          href={project.githubLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="rounded-lg border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-50 md:px-5 md:py-2.5 lg:text-base"
-                        >
-                          View Code
-                        </a>
+                        {project.githubLink.length ? (
+                          <a
+                            href={project.githubLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="rounded-lg border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-50 md:px-5 md:py-2.5 lg:text-base"
+                          >
+                            View Code
+                          </a>
+                        ) : (
+                          <></>
+                        )}
                       </div>
                     </div>
                   </article>
