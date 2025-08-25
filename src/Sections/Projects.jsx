@@ -25,7 +25,7 @@ const Projects = () => {
     unity: [
       {
         title: "Robot Runner",
-        description: "2D Endless Runner submitted as a Game Jam Entry.",
+        description: "2D Endless Runner submitted as a 10-day Game Jam Entry.",
         image: "./robotRunner.png",
         technologies: ["Unity", "C#", "2D Game Development"],
         liveLink: "https://trappenstein-games.itch.io/robot-runner",

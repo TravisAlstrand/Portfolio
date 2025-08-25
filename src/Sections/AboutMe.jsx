@@ -45,9 +45,18 @@ const AboutMe = () => {
               problem-solving ability, and passion for building into a developer
               role.
             </p>
+            <a
+              href="https://www.credential.net/profile/travisalstrand88911/wallet"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex justify-center rounded-lg bg-gray-900 px-6 py-3 text-lg font-medium text-white transition-colors hover:bg-gray-800"
+              aria-label="View my certifications"
+            >
+              View My Certifications
+            </a>
 
             <details
-              className="group rounded-lg bg-white p-6 shadow-sm"
+              className="group mt-8 rounded-lg bg-white p-6 shadow-sm"
               aria-expanded="false"
               role="group"
               aria-label="Expandable skills section"
@@ -91,8 +100,8 @@ const AboutMe = () => {
                     <li>Python</li>
                     <li>C# (Unity)</li>
                     <li>Java</li>
-                    <li>CSS3</li>
-                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
                   </ul>
                 </div>
 
@@ -130,9 +139,9 @@ const AboutMe = () => {
                     aria-labelledby="tools-heading"
                   >
                     <li>Git & GitHub</li>
-                    <li>Cursor / VS Code</li>
-                    <li>IntelliJ</li>
                     <li>Postman</li>
+                    <li>VS Code</li>
+                    <li>IntelliJ</li>
                   </ul>
                 </div>
 
