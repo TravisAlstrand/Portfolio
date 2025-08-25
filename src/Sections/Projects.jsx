@@ -2,26 +2,41 @@ const Projects = () => {
   const projects = {
     javascript: [
       {
-        title: "Project Name",
-        description:
-          "Brief description of the project highlighting key features and technologies used.",
-        image: "/path-to-project-image.jpg",
-        technologies: ["React", "Node.js", "TailwindCSS"],
-        liveLink: "https://project-url.com",
-        githubLink: "https://github.com/username/project",
+        title: "Schaut Construction",
+        description: "Single page website for local construction business.",
+        image: "./schautScreenshot.png",
+        technologies: ["React", "TypeScript", "TailwindCSS"],
+        liveLink: "https://schautconstruction.com",
+        githubLink: "https://github.com/TravisAlstrand/schaut_construction",
       },
-    ],
-    python: [
       {
-        title: "Project Name",
-        description:
-          "Brief description of the project highlighting key features and technologies used.",
-        image: "/path-to-project-image.jpg",
-        technologies: ["Flask", "SQLAlchemy", "PostgreSQL"],
-        liveLink: "https://project-url.com",
-        githubLink: "https://github.com/username/project",
+        title: "Serene and Clean",
+        description: "Single page website for local cleaning business.",
+        image: "./sereneScreenshot.png",
+        technologies: ["React", "JavaScript", "TailwindCSS"],
+        liveLink: "https://sereneandclean.net",
+        githubLink: "https://github.com/TravisAlstrand/serene_and_clean",
+      },
+      {
+        title: "This Portfolio",
+        description: "Yup, the very one you're currently visiting.",
+        image: "./portfolioScreenshot.png",
+        technologies: ["React", "JavaScript", "TailwindCSS"],
+        liveLink: "https://alstrand.dev",
+        githubLink: "https://github.com/TravisAlstrand/Portfolio",
       },
     ],
+    // python: [
+    //   {
+    //     title: "Project Name",
+    //     description:
+    //       "Brief description of the project highlighting key features and technologies used.",
+    //     image: "/path-to-project-image.jpg",
+    //     technologies: ["Flask", "SQLAlchemy", "PostgreSQL"],
+    //     liveLink: "https://project-url.com",
+    //     githubLink: "https://github.com/username/project",
+    //   },
+    // ],
     unity: [
       {
         title: "Robot Runner",
@@ -30,6 +45,22 @@ const Projects = () => {
         technologies: ["Unity", "C#", "2D Game Development"],
         liveLink: "https://trappenstein-games.itch.io/robot-runner",
         githubLink: "",
+      },
+      {
+        title: "Pomodojo",
+        description: "2D Platformer for a 'Pomodoro App' challenge.",
+        image: "./pomodojoScreenshot.png",
+        technologies: ["Unity", "C#", "2D Game Development"],
+        liveLink: "https://travisalstrand.github.io/PomoDojoLive/",
+        githubLink: "https://github.com/TravisAlstrand/PomoDojo",
+      },
+      {
+        title: "Night at the Art Gallery",
+        description: "2D Stealth Game for an 'Art Gallery App' challenge.",
+        image: "./artGalleryScreenshot.png",
+        technologies: ["Unity", "C#", "2D Game Development"],
+        liveLink: "https://travisalstrand.github.io/ArtGalleryLive/",
+        githubLink: "https://github.com/TravisAlstrand/ArtGallery",
       },
     ],
   };
