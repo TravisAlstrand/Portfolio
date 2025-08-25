@@ -31,14 +31,19 @@ const AboutMe = () => {
             </p>
 
             <p className="text-lg leading-relaxed text-gray-700">
-              For the past few years, I&apos;ve guided hundreds of students
-              through their first steps in web development as part of my role at
-              Team Treehouse.
+              Since 2021, I&apos;ve built a strong foundation in web development
+              through hands-on projects and certifications in front-end,
+              full-stack JavaScript, Python, data analysis, and Java.
             </p>
             <p className="text-lg leading-relaxed text-gray-700">
-              Now, I&apos;m taking that same journey further myself. I&apos;m
-              ready to bring my skills, teaching experience, and passion for
-              problem-solving into a developer role.
+              For the past few years, I&apos;ve worked at Team Treehouse helping
+              hundreds of students learn to code - an experience that sharpened
+              my own expertise and communication skills.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-700">
+              Now, I&apos;m ready to take the next step: applying my knowledge,
+              problem-solving ability, and passion for building into a developer
+              role.
             </p>
 
             <details

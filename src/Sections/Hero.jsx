@@ -14,8 +14,11 @@ const Hero = () => {
             Travis Alstrand
           </h1>
 
-          <p className="text-xl text-gray-700 sm:text-2xl">
-            Web & Game Developer
+          <p className="text-lg text-gray-700 sm:text-xl">
+            <em>
+              Developer who&apos;s taught hundreds to code - now ready to build
+              real-world solutions.
+            </em>
           </p>
 
           <div className="mt-8 flex justify-center gap-4 sm:justify-start">
