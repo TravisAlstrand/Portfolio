@@ -1,6 +1,6 @@
 const Projects = () => {
   const projects = {
-    javascript: [
+    JavaScript: [
       {
         title: "Schaut Construction",
         description: "Single page website for local construction business.",
@@ -37,7 +37,7 @@ const Projects = () => {
     //     githubLink: "https://github.com/username/project",
     //   },
     // ],
-    unity: [
+    Unity: [
       {
         title: "Robot Runner",
         description: "2D Endless Runner submitted as a 10-day Game Jam Entry.",
@@ -82,7 +82,7 @@ const Projects = () => {
         <div className="space-y-16 lg:space-y-24">
           {Object.entries(projects).map(([category, categoryProjects]) => (
             <div key={category} className="space-y-8 lg:space-y-12">
-              <h3 className="text-2xl font-semibold text-gray-900 capitalize lg:text-3xl">
+              <h3 className="text-2xl font-semibold text-gray-900 lg:text-3xl">
                 {category} Projects
               </h3>
 
@@ -127,7 +127,7 @@ const Projects = () => {
                           rel="noopener noreferrer"
                           className="rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-800 md:px-5 md:py-2.5 lg:text-base"
                         >
-                          View Live
+                          {category === "Unity" ? "Play Game" : "View Live"}
                         </a>
                         {project.githubLink.length ? (
                           <a

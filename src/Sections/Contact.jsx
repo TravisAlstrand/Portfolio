@@ -9,7 +9,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add form submission logic here
+    // TODO: FORM SUBMISSION LOGIC
     console.log("Form submitted:", formData);
   };
 
@@ -59,7 +59,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full rounded-lg border border-gray-300 px-4 py-2 text-gray-900 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 focus:outline-none"
+                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 focus:outline-none"
                 aria-required="true"
               />
             </div>
@@ -78,7 +78,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full rounded-lg border border-gray-300 px-4 py-2 text-gray-900 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 focus:outline-none"
+                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 focus:outline-none"
                 aria-required="true"
               />
             </div>
@@ -97,7 +97,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 rows={4}
-                className="w-full rounded-lg border border-gray-300 px-4 py-2 text-gray-900 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 focus:outline-none"
+                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 focus:outline-none"
                 aria-required="true"
               />
             </div>
@@ -120,7 +120,7 @@ const Contact = () => {
             <div className="mt-4 space-x-4">
               <a
                 href="mailto:alstrand.travis@gmail.com"
-                className="inline-block rounded-lg border-2 border-gray-900 px-6 py-2 text-gray-900 transition-colors hover:bg-gray-50"
+                className="inline-block rounded-lg border-2 border-gray-900 bg-white px-6 py-2 text-gray-900 transition-colors hover:bg-gray-50"
                 aria-label="Send me an email"
               >
                 Email Me
@@ -129,7 +129,7 @@ const Contact = () => {
                 href="https://linkedin.com/in/travis-alstrand"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-lg border-2 border-gray-900 px-6 py-2 text-gray-900 transition-colors hover:bg-gray-50"
+                className="inline-block rounded-lg border-2 border-gray-900 bg-white px-6 py-2 text-gray-900 transition-colors hover:bg-gray-50"
                 aria-label="Visit my LinkedIn profile"
               >
                 LinkedIn
