@@ -1,4 +1,3 @@
-import { Toaster } from "@/components/ui/sonner";
 import Hero from "../Sections/Hero";
 import AboutMe from "../Sections/AboutMe";
 import Projects from "../Sections/Projects";
@@ -11,7 +10,6 @@ const HomePage = () => {
       <AboutMe />
       <Projects />
       <Contact />
-      <Toaster />
     </main>
   );
 };
