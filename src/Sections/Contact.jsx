@@ -1,24 +1,23 @@
-import { useState } from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: FORM SUBMISSION LOGIC
-    console.log("Form submitted:", formData);
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+    emailjs
+      .sendForm("service_vqjmxsu", "template_jy4nucc", form.current, {
+        publicKey: "6g0rq8vN720O74Ji5",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        },
+      );
   };
 
   return (
@@ -44,6 +43,7 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className="space-y-6"
             aria-label="Contact form"
+            ref={form}
           >
             <div>
               <label
@@ -56,8 +56,6 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
-                value={formData.name}
-                onChange={handleChange}
                 required
                 className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 focus:outline-none"
                 aria-required="true"
@@ -75,8 +73,6 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
                 required
                 className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 focus:outline-none"
                 aria-required="true"
@@ -93,8 +89,6 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
-                value={formData.message}
-                onChange={handleChange}
                 required
                 rows={4}
                 className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 focus:outline-none"
