@@ -18,6 +18,7 @@ const Contact = () => {
           console.log("FAILED...", error.text);
         },
       );
+    e.target.reset();
   };
 
   return (
