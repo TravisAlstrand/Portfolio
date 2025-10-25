@@ -1,23 +1,27 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
+  const [sendingForm, setSendingForm] = useState();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setSendingForm(true);
     emailjs
       .sendForm("service_vqjmxsu", "template_jy4nucc", form.current, {
         publicKey: "6g0rq8vN720O74Ji5",
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast.success("Message sent successfully!");
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          toast.error(`Message Not Sent. ${error.status}: ${error.message}`);
         },
       );
+    setSendingForm(false);
     e.target.reset();
   };
 
@@ -58,7 +62,7 @@ const Contact = () => {
                 id="name"
                 name="name"
                 required
-                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 focus:outline-none"
+                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-900"
                 aria-required="true"
               />
             </div>
@@ -75,7 +79,7 @@ const Contact = () => {
                 id="email"
                 name="email"
                 required
-                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 focus:outline-none"
+                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-900"
                 aria-required="true"
               />
             </div>
@@ -92,19 +96,23 @@ const Contact = () => {
                 name="message"
                 required
                 rows={4}
-                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 focus:outline-none"
+                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-900"
                 aria-required="true"
               />
             </div>
 
             <div className="text-center">
-              <button
-                type="submit"
-                className="rounded-lg bg-gray-900 px-8 py-3 text-lg font-medium text-white transition-colors hover:cursor-pointer hover:bg-gray-800"
-                aria-label="Send message"
-              >
-                Send Message
-              </button>
+              {sendingForm ? (
+                <p>Sending...</p>
+              ) : (
+                <button
+                  type="submit"
+                  className="rounded-lg bg-gray-900 px-8 py-3 text-lg font-medium text-white transition-colors hover:cursor-pointer hover:bg-gray-800"
+                  aria-label="Send message"
+                >
+                  Send Message
+                </button>
+              )}
             </div>
           </form>
 

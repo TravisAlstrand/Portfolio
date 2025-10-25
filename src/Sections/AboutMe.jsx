@@ -20,7 +20,7 @@ const AboutMe = () => {
 
         <div className="grid items-start gap-8 md:grid-cols-[300px_1fr]">
           <img
-            src="/Headshot.jpg"
+            src="/tempImage.jpg"
             alt="Travis Alstrand - Professional headshot"
             className="mx-auto w-full max-w-[300px] rounded-lg shadow-md"
           />
