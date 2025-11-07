@@ -2,6 +2,15 @@ const Projects = () => {
   const projects = {
     JavaScript: [
       {
+        title: "Trappenstein's Movie Vault",
+        description: "Website to search and save movies.",
+        image: "./trappensteinScreenshot.png",
+        technologies: ["React", "Supabase", "TailwindCSS"],
+        liveLink: "https://trappenstein.com",
+        githubLink:
+          "https://github.com/TravisAlstrand/trappenstein_movie_crypt",
+      },
+      {
         title: "Schaut Construction",
         description: "Single page website for local construction business.",
         image: "./schautScreenshot.png",
@@ -16,14 +25,6 @@ const Projects = () => {
         technologies: ["React", "JavaScript", "TailwindCSS"],
         liveLink: "https://sereneandclean.net",
         githubLink: "https://github.com/TravisAlstrand/serene_and_clean",
-      },
-      {
-        title: "This Portfolio",
-        description: "Yup, the very one you're currently visiting.",
-        image: "./portfolioScreenshot.png",
-        technologies: ["React", "JavaScript", "TailwindCSS"],
-        liveLink: "https://alstrand.dev",
-        githubLink: "https://github.com/TravisAlstrand/Portfolio",
       },
     ],
     // python: [
