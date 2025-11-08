@@ -2,7 +2,7 @@ const Projects = () => {
   const projects = {
     JavaScript: [
       {
-        title: "Trappenstein's Movie Vault",
+        title: "Trappenstein's Movie Crypt",
         description: "Website to search, save and rate movies.",
         image: "./trappensteinScreenshot.png",
         technologies: ["React", "Supabase", "TailwindCSS"],
