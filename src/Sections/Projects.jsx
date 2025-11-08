@@ -3,7 +3,7 @@ const Projects = () => {
     JavaScript: [
       {
         title: "Trappenstein's Movie Vault",
-        description: "Website to search and save movies.",
+        description: "Website to search, save and rate movies.",
         image: "./trappensteinScreenshot.png",
         technologies: ["React", "Supabase", "TailwindCSS"],
         liveLink: "https://trappenstein.com",
